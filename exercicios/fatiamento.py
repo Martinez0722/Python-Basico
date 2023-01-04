@@ -13,3 +13,18 @@ Se nome e idade forem digitados:
 Se nada for digitado em nome ou idade: 
     exiba "Desculpe, você deixou campos vazios."
 """
+nome = input('Digite seu nome: ')
+idade = input('Digite idade: ')
+if nome and idade != 0:
+    print(f"O seu nome é {nome}, o seu nome invertido é {nome[::-1]}")
+
+    if  " " in nome:
+        print('O seu nome contem espaço')
+    else:
+        print("O seu nome não contem espaços")
+
+    print(f"O seu nome possui {len(nome)} letras")
+    print(f"A ultima letra do seu nome é {nome[-1]}")
+else:
+    print('Desculpe, você deixou os campos vazios.')
+
